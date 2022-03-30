@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.header h1 {
+  font-size: 4rem;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.container {
+  padding: 1rem 0;
+  max-width: 960rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  min-height: 100vh;
+}
+.search {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  margin: 1.5em 0;
+}
+
+.fa-magnifying-glass {
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+.search input {
+  width: 95%;
+  border: none;
+  background-color: rgb(233, 233, 233);
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 25rem);
+  justify-content: center;
+}
+
+.note.new {
+  background-color: #67d7cc;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background: transparent;
+  outline: none;
+}
+
+.save {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+
+.save:hover {
+  background-color: #88ff9a;
+  cursor: pointer;
+}
+
+.note {
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  background-color: #1cffd1;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  height: 20rem;
+  display: flex;
+  white-space: pre-wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fa-trash-can:hover {
+  color: #858383;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.date {
+  color: #696969;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.noteMode {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .notes-list {
+    grid-template-columns: repeat(auto-fit, 20rem);
+  }
+}
