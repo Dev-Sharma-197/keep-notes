@@ -5,7 +5,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "Note-app.github.io",
+  "homepage": "https://github.com/Dev-Sharma-197/keep-note.github.io.git",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
