@@ -5,7 +5,7 @@ const Header = ({ handleMode }) => {
     <div className="header">
       <h1>Notes</h1>
       <button className="save" onClick={() => handleMode((val) => !val)}>
-        Toggle Mode
+        Toggle Theme
       </button>
     </div>
   );
